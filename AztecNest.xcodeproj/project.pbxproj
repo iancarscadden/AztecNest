@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		354270662CA0C6200031B1F0 /* CreateNewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354270652CA0C6200031B1F0 /* CreateNewMessageView.swift */; };
+		354270682CA0CC580031B1F0 /* RecentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354270672CA0CC580031B1F0 /* RecentMessage.swift */; };
+		3542706A2CA0CC7C0031B1F0 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354270692CA0CC7C0031B1F0 /* ChatMessage.swift */; };
+		3542706C2CA0CCDF0031B1F0 /* ChatLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3542706B2CA0CCDF0031B1F0 /* ChatLogView.swift */; };
+		3542706E2CA0CD220031B1F0 /* FirebaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3542706D2CA0CD220031B1F0 /* FirebaseConstants.swift */; };
+		3562EC402C9CCE98001E857A /* AztecNestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562EC3F2C9CCE98001E857A /* AztecNestApp.swift */; };
+		3562EC442C9CCE99001E857A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3562EC432C9CCE99001E857A /* Assets.xcassets */; };
+		3562EC472C9CCE99001E857A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3562EC462C9CCE99001E857A /* Preview Assets.xcassets */; };
+		3562EC512C9CCE99001E857A /* AztecNestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562EC502C9CCE99001E857A /* AztecNestTests.swift */; };
+		3562EC5B2C9CCE99001E857A /* AztecNestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562EC5A2C9CCE99001E857A /* AztecNestUITests.swift */; };
+		3562EC5D2C9CCE99001E857A /* AztecNestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562EC5C2C9CCE99001E857A /* AztecNestUITestsLaunchTests.swift */; };
+		3562EC6A2C9CD2E1001E857A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562EC692C9CD2E1001E857A /* LoginView.swift */; };
+		3562EC6D2C9CD429001E857A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3562EC6C2C9CD429001E857A /* FirebaseAuth */; };
+		3562EC6F2C9CD429001E857A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3562EC6E2C9CD429001E857A /* FirebaseStorage */; };
+		3562EC732C9CD728001E857A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3562EC722C9CD728001E857A /* GoogleService-Info.plist */; };
+		3562EC752C9CDB6E001E857A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562EC742C9CDB6E001E857A /* ImagePicker.swift */; };
+		3562EC782C9CDD93001E857A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3562EC772C9CDD93001E857A /* FirebaseFirestore */; };
+		3562EC7F2C9CE3EC001E857A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3562EC7E2C9CE3EC001E857A /* SDWebImageSwiftUI */; };
+		3583A6282CADB29600C21D9F /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3583A6272CADB29600C21D9F /* ChatUser.swift */; };
+		3583A62A2CADB2B400C21D9F /* MainMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3583A6292CADB2B400C21D9F /* MainMessagesView.swift */; };
+		3583A62C2CADB2CB00C21D9F /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3583A62B2CADB2CB00C21D9F /* FirebaseManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3562EC4D2C9CCE99001E857A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3562EC342C9CCE98001E857A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3562EC3B2C9CCE98001E857A;
+			remoteInfo = AztecNest;
+		};
+		3562EC572C9CCE99001E857A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3562EC342C9CCE98001E857A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3562EC3B2C9CCE98001E857A;
+			remoteInfo = AztecNest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		354270652CA0C6200031B1F0 /* CreateNewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewMessageView.swift; sourceTree = "<group>"; };
+		354270672CA0CC580031B1F0 /* RecentMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMessage.swift; sourceTree = "<group>"; };
+		354270692CA0CC7C0031B1F0 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		3542706B2CA0CCDF0031B1F0 /* ChatLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogView.swift; sourceTree = "<group>"; };
+		3542706D2CA0CD220031B1F0 /* FirebaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConstants.swift; sourceTree = "<group>"; };
+		3562EC3C2C9CCE98001E857A /* AztecNest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AztecNest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3562EC3F2C9CCE98001E857A /* AztecNestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AztecNestApp.swift; sourceTree = "<group>"; };
+		3562EC432C9CCE99001E857A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3562EC462C9CCE99001E857A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3562EC4C2C9CCE99001E857A /* AztecNestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AztecNestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3562EC502C9CCE99001E857A /* AztecNestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AztecNestTests.swift; sourceTree = "<group>"; };
+		3562EC562C9CCE99001E857A /* AztecNestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AztecNestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3562EC5A2C9CCE99001E857A /* AztecNestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AztecNestUITests.swift; sourceTree = "<group>"; };
+		3562EC5C2C9CCE99001E857A /* AztecNestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AztecNestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3562EC692C9CD2E1001E857A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3562EC722C9CD728001E857A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3562EC742C9CDB6E001E857A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3583A6272CADB29600C21D9F /* ChatUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatUser.swift; path = "../../../../../Downloads/LBTASwiftUIFirebaseChat 10/LBTASwiftUIFirebaseChat/Model/ChatUser.swift"; sourceTree = "<group>"; };
+		3583A6292CADB2B400C21D9F /* MainMessagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMessagesView.swift; path = "../../../../../Downloads/LBTASwiftUIFirebaseChat 10/LBTASwiftUIFirebaseChat/MainMessages/MainMessagesView.swift"; sourceTree = "<group>"; };
+		3583A62B2CADB2CB00C21D9F /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseManager.swift; path = "../../../../../Downloads/LBTASwiftUIFirebaseChat 10/LBTASwiftUIFirebaseChat/Utils/FirebaseManager.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3562EC392C9CCE98001E857A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3562EC7F2C9CE3EC001E857A /* SDWebImageSwiftUI in Frameworks */,
+				3562EC6D2C9CD429001E857A /* FirebaseAuth in Frameworks */,
+				3562EC6F2C9CD429001E857A /* FirebaseStorage in Frameworks */,
+				3562EC782C9CDD93001E857A /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3562EC492C9CCE99001E857A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3562EC532C9CCE99001E857A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3562EC332C9CCE98001E857A = {
+			isa = PBXGroup;
+			children = (
+				3562EC3E2C9CCE98001E857A /* AztecNest */,
+				3562EC4F2C9CCE99001E857A /* AztecNestTests */,
+				3562EC592C9CCE99001E857A /* AztecNestUITests */,
+				3562EC3D2C9CCE98001E857A /* Products */,
+				3562EC762C9CDD93001E857A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3562EC3D2C9CCE98001E857A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3562EC3C2C9CCE98001E857A /* AztecNest.app */,
+				3562EC4C2C9CCE99001E857A /* AztecNestTests.xctest */,
+				3562EC562C9CCE99001E857A /* AztecNestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3562EC3E2C9CCE98001E857A /* AztecNest */ = {
+			isa = PBXGroup;
+			children = (
+				3562EC3F2C9CCE98001E857A /* AztecNestApp.swift */,
+				3562EC432C9CCE99001E857A /* Assets.xcassets */,
+				3562EC452C9CCE99001E857A /* Preview Content */,
+				3562EC692C9CD2E1001E857A /* LoginView.swift */,
+				3583A6272CADB29600C21D9F /* ChatUser.swift */,
+				3583A6292CADB2B400C21D9F /* MainMessagesView.swift */,
+				3583A62B2CADB2CB00C21D9F /* FirebaseManager.swift */,
+				3562EC742C9CDB6E001E857A /* ImagePicker.swift */,
+				3562EC722C9CD728001E857A /* GoogleService-Info.plist */,
+				354270652CA0C6200031B1F0 /* CreateNewMessageView.swift */,
+				354270672CA0CC580031B1F0 /* RecentMessage.swift */,
+				354270692CA0CC7C0031B1F0 /* ChatMessage.swift */,
+				3542706B2CA0CCDF0031B1F0 /* ChatLogView.swift */,
+				3542706D2CA0CD220031B1F0 /* FirebaseConstants.swift */,
+			);
+			path = AztecNest;
+			sourceTree = "<group>";
+		};
+		3562EC452C9CCE99001E857A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3562EC462C9CCE99001E857A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3562EC4F2C9CCE99001E857A /* AztecNestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3562EC502C9CCE99001E857A /* AztecNestTests.swift */,
+			);
+			path = AztecNestTests;
+			sourceTree = "<group>";
+		};
+		3562EC592C9CCE99001E857A /* AztecNestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3562EC5A2C9CCE99001E857A /* AztecNestUITests.swift */,
+				3562EC5C2C9CCE99001E857A /* AztecNestUITestsLaunchTests.swift */,
+			);
+			path = AztecNestUITests;
+			sourceTree = "<group>";
+		};
+		3562EC762C9CDD93001E857A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3562EC3B2C9CCE98001E857A /* AztecNest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3562EC602C9CCE99001E857A /* Build configuration list for PBXNativeTarget "AztecNest" */;
+			buildPhases = (
+				3562EC382C9CCE98001E857A /* Sources */,
+				3562EC392C9CCE98001E857A /* Frameworks */,
+				3562EC3A2C9CCE98001E857A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AztecNest;
+			packageProductDependencies = (
+				3562EC6C2C9CD429001E857A /* FirebaseAuth */,
+				3562EC6E2C9CD429001E857A /* FirebaseStorage */,
+				3562EC772C9CDD93001E857A /* FirebaseFirestore */,
+				3562EC7E2C9CE3EC001E857A /* SDWebImageSwiftUI */,
+			);
+			productName = AztecNest;
+			productReference = 3562EC3C2C9CCE98001E857A /* AztecNest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3562EC4B2C9CCE99001E857A /* AztecNestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3562EC632C9CCE99001E857A /* Build configuration list for PBXNativeTarget "AztecNestTests" */;
+			buildPhases = (
+				3562EC482C9CCE99001E857A /* Sources */,
+				3562EC492C9CCE99001E857A /* Frameworks */,
+				3562EC4A2C9CCE99001E857A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3562EC4E2C9CCE99001E857A /* PBXTargetDependency */,
+			);
+			name = AztecNestTests;
+			productName = AztecNestTests;
+			productReference = 3562EC4C2C9CCE99001E857A /* AztecNestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3562EC552C9CCE99001E857A /* AztecNestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3562EC662C9CCE99001E857A /* Build configuration list for PBXNativeTarget "AztecNestUITests" */;
+			buildPhases = (
+				3562EC522C9CCE99001E857A /* Sources */,
+				3562EC532C9CCE99001E857A /* Frameworks */,
+				3562EC542C9CCE99001E857A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3562EC582C9CCE99001E857A /* PBXTargetDependency */,
+			);
+			name = AztecNestUITests;
+			productName = AztecNestUITests;
+			productReference = 3562EC562C9CCE99001E857A /* AztecNestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3562EC342C9CCE98001E857A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3562EC3B2C9CCE98001E857A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3562EC4B2C9CCE99001E857A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3562EC3B2C9CCE98001E857A;
+					};
+					3562EC552C9CCE99001E857A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3562EC3B2C9CCE98001E857A;
+					};
+				};
+			};
+			buildConfigurationList = 3562EC372C9CCE98001E857A /* Build configuration list for PBXProject "AztecNest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3562EC332C9CCE98001E857A;
+			packageReferences = (
+				3562EC6B2C9CD428001E857A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3562EC7B2C9CE32C001E857A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 3562EC3D2C9CCE98001E857A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3562EC3B2C9CCE98001E857A /* AztecNest */,
+				3562EC4B2C9CCE99001E857A /* AztecNestTests */,
+				3562EC552C9CCE99001E857A /* AztecNestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3562EC3A2C9CCE98001E857A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3562EC472C9CCE99001E857A /* Preview Assets.xcassets in Resources */,
+				3562EC732C9CD728001E857A /* GoogleService-Info.plist in Resources */,
+				3562EC442C9CCE99001E857A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3562EC4A2C9CCE99001E857A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3562EC542C9CCE99001E857A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3562EC382C9CCE98001E857A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3583A62A2CADB2B400C21D9F /* MainMessagesView.swift in Sources */,
+				3583A6282CADB29600C21D9F /* ChatUser.swift in Sources */,
+				3583A62C2CADB2CB00C21D9F /* FirebaseManager.swift in Sources */,
+				3542706A2CA0CC7C0031B1F0 /* ChatMessage.swift in Sources */,
+				3542706C2CA0CCDF0031B1F0 /* ChatLogView.swift in Sources */,
+				3562EC752C9CDB6E001E857A /* ImagePicker.swift in Sources */,
+				354270682CA0CC580031B1F0 /* RecentMessage.swift in Sources */,
+				354270662CA0C6200031B1F0 /* CreateNewMessageView.swift in Sources */,
+				3562EC6A2C9CD2E1001E857A /* LoginView.swift in Sources */,
+				3542706E2CA0CD220031B1F0 /* FirebaseConstants.swift in Sources */,
+				3562EC402C9CCE98001E857A /* AztecNestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3562EC482C9CCE99001E857A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3562EC512C9CCE99001E857A /* AztecNestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3562EC522C9CCE99001E857A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3562EC5D2C9CCE99001E857A /* AztecNestUITestsLaunchTests.swift in Sources */,
+				3562EC5B2C9CCE99001E857A /* AztecNestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3562EC4E2C9CCE99001E857A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3562EC3B2C9CCE98001E857A /* AztecNest */;
+			targetProxy = 3562EC4D2C9CCE99001E857A /* PBXContainerItemProxy */;
+		};
+		3562EC582C9CCE99001E857A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3562EC3B2C9CCE98001E857A /* AztecNest */;
+			targetProxy = 3562EC572C9CCE99001E857A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3562EC5E2C9CCE99001E857A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3562EC5F2C9CCE99001E857A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3562EC612C9CCE99001E857A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AztecNest/Preview Content\"";
+				DEVELOPMENT_TEAM = J9J45TZ65N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ian-Projects.AztecNest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3562EC622C9CCE99001E857A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AztecNest/Preview Content\"";
+				DEVELOPMENT_TEAM = J9J45TZ65N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ian-Projects.AztecNest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3562EC642C9CCE99001E857A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9J45TZ65N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ian-Projects.AztecNestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AztecNest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AztecNest";
+			};
+			name = Debug;
+		};
+		3562EC652C9CCE99001E857A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9J45TZ65N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ian-Projects.AztecNestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AztecNest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AztecNest";
+			};
+			name = Release;
+		};
+		3562EC672C9CCE99001E857A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9J45TZ65N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ian-Projects.AztecNestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AztecNest;
+			};
+			name = Debug;
+		};
+		3562EC682C9CCE99001E857A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9J45TZ65N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ian-Projects.AztecNestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AztecNest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3562EC372C9CCE98001E857A /* Build configuration list for PBXProject "AztecNest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3562EC5E2C9CCE99001E857A /* Debug */,
+				3562EC5F2C9CCE99001E857A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3562EC602C9CCE99001E857A /* Build configuration list for PBXNativeTarget "AztecNest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3562EC612C9CCE99001E857A /* Debug */,
+				3562EC622C9CCE99001E857A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3562EC632C9CCE99001E857A /* Build configuration list for PBXNativeTarget "AztecNestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3562EC642C9CCE99001E857A /* Debug */,
+				3562EC652C9CCE99001E857A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3562EC662C9CCE99001E857A /* Build configuration list for PBXNativeTarget "AztecNestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3562EC672C9CCE99001E857A /* Debug */,
+				3562EC682C9CCE99001E857A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3562EC6B2C9CD428001E857A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+		3562EC7B2C9CE32C001E857A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3562EC6C2C9CD429001E857A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3562EC6B2C9CD428001E857A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3562EC6E2C9CD429001E857A /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3562EC6B2C9CD428001E857A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		3562EC772C9CDD93001E857A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3562EC6B2C9CD428001E857A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3562EC7E2C9CE3EC001E857A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3562EC7B2C9CE32C001E857A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3562EC342C9CCE98001E857A /* Project object */;
+}
